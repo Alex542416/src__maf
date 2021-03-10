@@ -1,0 +1,135 @@
+.section {
+
+	&--mainseo--production-det {
+		background-color: #1B1E1F;
+		padding-bottom: 22rem;
+		@media(max-width: 48em) {
+
+		}
+	}
+}
+
+
+
+
+
+// Mainseo--production-det
+
+.mainseo__right--row {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 7rem;
+
+	&--title {
+		font-size: 2rem;
+		font-weight: 400;
+		color: #FEFBFF;
+		letter-spacing: 0.05em;
+	}
+	&--text {
+		font-size: 2rem;
+		font-weight: 300;
+		color: #B7B7B7;
+		font-family: 'Futura PT';
+		letter-spacing: 0.05em;
+		margin-top: 0.5rem;
+	}
+}
+
+
+
+
+
+
+// ******************************************************************
+// ******************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+// Mobile Adaptive
+
+@media(max-width: 48em) {
+
+// Mainseo--production-det Mobile
+
+.mainseo__right--row {
+	display: block;
+	justify-content: space-between;
+	margin-top: 7rem;
+	margin-bottom: 3rem;
+
+	&--item {
+		margin-top: 6rem;
+	}
+
+	&--title {
+		font-size: 3.6rem;
+		
+	}
+	&--text {
+		font-size: 3.6rem;
+		margin-top: 1rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} // End Adaptive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

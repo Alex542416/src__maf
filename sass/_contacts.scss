@@ -1,0 +1,305 @@
+.section {
+
+	&--maincontacts {
+		position: relative;
+		background-color: #1B1E1F;
+		padding-bottom: 10rem;
+		@media(max-width: 48em) {
+			padding-bottom: 0rem;
+		}
+	}
+
+	&--form {
+		background-color: #252828;
+		
+		@media(max-width: 48em) {
+			// display: none;
+			// padding-bottom: 18rem;
+		}
+	}
+
+	
+}
+
+body {
+	background-color: #1B1E1F;
+}
+
+
+
+
+
+
+
+// Maincontacts
+
+.maincontacts__circles {
+	position: absolute;
+	width: 71rem;
+	right: 0rem;
+	top: -24rem;
+	z-index: 2;
+	& img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.maincontacts {
+
+	&--title {
+		font-size: 6.5rem;
+		font-weight: 400;
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		margin-top: 11.5rem;
+	}
+
+	&__inner {
+		display: flex;
+		margin-top: 5.5rem;
+	}
+	&--left {
+		width: 62%;
+		height: 53.7rem;
+	}
+	&--right {
+		position: relative;
+		width: 38%;
+		padding-left: 12.3rem;
+		z-index: 3;
+		&--title {
+			font-size: 2rem;
+			font-weight: 400;
+			color: #F0F0F0;
+			margin-top: 3.7rem;
+		}
+		&--text {
+			font-size: 2rem;
+			font-weight: 300;
+			color: #BABECA;
+			font-family: 'Futura PT';
+			margin-top: 1rem;
+			margin-bottom: 6rem;
+		}
+		&--phones {
+			display: flex;
+			margin-top: 1rem;
+		}
+	}
+	&--phone {
+		font-size: 2rem;
+		font-weight: 300;
+		color: #BABECA;
+		font-family: 'Futura PT';
+		&:last-child {
+			margin-left: 2rem;
+		}
+	}
+}
+
+
+// Map
+
+.map {
+	width: 100%;
+	height: 100%;
+}
+
+#map {
+	height: 100%;
+}
+
+
+
+
+
+
+// Form 
+
+.container--form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 95rem;
+}
+
+.input__color {
+	background-color: #252828;
+}
+
+
+
+
+
+
+
+
+
+
+
+// ******************************************************************
+// ******************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+// Mobile Adaptive
+
+@media(max-width: 48em) {
+
+// Maincontacts Mobile
+
+.maincontacts__circles {
+	display: none;
+}
+
+.container--maincontacts {
+	padding-left: 0rem;
+	padding-right: 0rem;
+}
+
+.maincontacts {
+
+	&--title {
+		font-size: 5.4rem;
+		margin-top: 12rem;
+		padding-left: 4rem;
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: 1rem;
+	}
+	&--left {
+		width: 100%;
+		height: 115rem;
+	}
+	&--right {
+		width: 100%;
+		padding-left: 4rem;
+		padding-right: 4rem;
+		margin-bottom: 15rem;
+		&--title {
+			font-size: 3.6rem;
+			margin-top: 4rem;
+		}
+		&--text {
+			font-size: 3.6rem;
+			margin-top: 1rem;
+			margin-bottom: 7rem;
+		}
+		&--phones {
+			display: flex;
+			margin-top: 1.5rem;
+		}
+	}
+	&--phone {
+		font-size: 3.6rem;
+		&:last-child {
+			margin-left: 4rem;
+		}
+	}
+}
+
+
+// Map
+
+.map {
+	width: 100%;
+	height: 100%;
+}
+
+#map {
+	height: 100%;
+}
+
+
+
+
+
+
+// Form 
+
+.container--form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	padding-left: 0rem;
+	padding-right: 0rem;
+}
+
+.input__color {
+	background-color: #252828;
+}
+
+.form__button--page {
+	margin-bottom: 15rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} // End Adaptive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

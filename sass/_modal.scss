@@ -1,0 +1,540 @@
+// Modal Window 
+
+.overlay {  
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(30px);
+	z-index: 150;
+	transition: .5s all;
+} 
+
+
+.modal {
+	opacity: 0;
+	visibility: hidden;
+	width: 100%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 151; /* must be more than overlay */
+	background-color: #1B1E1F;
+	box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.3);
+	transition: 0.5s all;
+    display: none;
+    
+    &.active {
+    	display: flex;
+        justify-content: center;
+		align-items: center;
+        width: 122.1rem;
+        height: 86.7rem;
+   	}
+}
+
+.overlay.active,
+.modal.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+.close-modal {
+   width: 3.6rem;
+   height: 3.6rem;
+   position: absolute;
+   top: 4.8rem;
+   right: 5rem;
+   cursor: pointer;
+   & img {
+   	width: 100%;
+   }
+}
+
+// Form
+
+.form {
+
+	&__inner {
+		width: 68.7rem;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__title {
+		font-size: 4rem;
+		font-weight: 400;
+		color: #fff;
+		padding-bottom: 2rem;
+	}
+	&__item {
+		&--long {
+			width: 100%;
+			border-bottom: 0.1rem solid #727680;
+		}
+		&--title {
+			font-size: 1.6rem;
+			font-weight: 300;
+			color: #BABECA;
+			font-family: 'Futura PT';
+			margin-top: 3.5rem;
+		}
+		&--input {
+			width: 100%;
+			font-size: 1.6rem;
+			font-weight: 400;
+			color: #fff;
+			background-color: #1B1E1F;
+			border: none;
+			padding-bottom: 1rem;
+			padding-top: 1rem;
+		}
+
+		&--short {
+			width: 47%;
+			border-bottom: 0.1rem solid #727680;
+		}
+	}
+	&__button {
+		font-size: 1.5rem;
+		font-weight: 500;
+		color: #FAF8F8;
+		font-family: 'Futura PT';
+		background-color: #1B1E1F;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		border: none;
+		border-bottom: 0.14rem solid #FFFFFF;
+		padding-bottom: 0.5rem;
+		margin-top: 5rem;
+	}
+}
+
+.form__rowfile {
+	display: flex;
+	margin-top: 5rem;
+}
+
+.input {
+	background-color: #1B1E1F;
+}
+
+.input__wrapper__1,
+.input__wrapper__2 {
+	position: relative;
+	text-align: center;
+}
+
+.input__wrapper__1 {
+	width: 27rem;
+}
+
+.input__wrapper__2 {
+	width: 30rem;
+	margin-left: 0rem;
+}
+ 
+.input__file,
+.input__file__2 {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	background-color: #1B1E1F;
+}
+ 
+.input__file-icon-wrapper {
+	height: 2.2rem;
+	width: 2.2rem;
+	display: flex;
+	align-items: center;
+	margin-right: 1.5rem;
+}
+ 
+.input__file-button {
+	height: 6.3rem;
+	background-color: #1B1E1F;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 400;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+	padding-left: 0rem;
+	border: none;
+	border-radius: 0rem;
+	cursor: pointer;
+}
+
+.input__file-button--1 {
+	width: 30rem;
+}
+
+.input__file-button--2 {
+	width: 32.2rem;
+}
+
+.form__content {
+
+	display: flex;
+	align-items: center;
+	margin-top: 3rem;
+	&--name {
+		font-size: 1.6rem;
+		font-weight: 300;
+		color: #BABECA;
+		font-family: 'Futura PT';
+		margin-right: 1rem;
+		padding-top: 0rem;
+	}
+	&--icon {
+		width: 1rem;
+		height: 1rem;
+	}
+}
+
+.form__confidantial {
+	margin-top: 2rem;
+	 & p {
+	 	display: inline-block;
+	 	font-size: 1.5rem;
+		font-weight: 300;
+		color: #767880;
+		font-family: 'Futura PT';
+	 }
+	 &--link {
+	 	display: inline-block;
+	 	font-size: 1.5rem;
+		font-weight: 400;
+		color: #afb2ba;
+		font-family: 'Futura PT';
+		margin-left: 0.5rem;
+	 }
+}
+
+
+
+.sendwindow {
+	font-size: 3.5rem;
+	font-weight: 400;
+	color: #2F3734;
+	width: 70.5rem;
+    height: 28.7rem;
+	border: 0.2rem solid rgba(81, 211, 164, 0.2);
+	position: fixed;
+	background-color: #fff;
+	display: none;
+	z-index: 200;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	padding-top: 12rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ******************************************************************
+// ******************************************************************
+
+
+
+// Mobile Adaptive
+
+@media(max-width: 48em) {
+	
+// Modal Window Mobile
+
+.overlay {  
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(30px);
+	z-index: 150;
+	transition: .5s all;
+} 
+
+
+.modal {
+	opacity: 0;
+	visibility: hidden;
+	width: 100%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 151; /* must be more than overlay */
+	background-color: #1B1E1F;
+	box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.3);
+	transition: 0.5s all;
+    display: none;
+    
+    &.active {
+    	display: block;
+        justify-content: center;
+		align-items: center;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+		overflow-y: auto;
+   	}
+}
+
+.overlay.active,
+.modal.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+.close-modal {
+   width: 5rem;
+   height: 5rem;
+   position: absolute;
+   top: 4.6rem;
+   right: 4.6rem;
+   cursor: pointer;
+   & img {
+   	width: 100%;
+   }
+}
+
+// Form
+
+.form {
+
+	&__inner {
+		width: auto;
+		padding-top: 21rem;
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+	&__row {
+		display: block;
+	}
+	&__title {
+		font-size: 5.4rem;
+		padding-bottom: 0rem;
+		text-transform: uppercase;
+	}
+	&__item {
+		&--long {
+			width: 100%;
+			border-bottom: 0.2rem solid #727680;
+		}
+		&--title {
+			font-size: 3.2rem;
+			margin-top: 7rem;
+		}
+		&--input {
+			width: 100%;
+			font-size: 3.6rem;
+			padding-bottom: 2rem;
+			padding-top: 2rem;
+		}
+
+		&--short {
+			width: 100%;
+			border-bottom: 0.2rem solid #727680;
+		}
+	}
+	&__button {
+		font-size: 3rem;
+		border: none;
+		border-bottom: 0.2rem solid #FFFFFF;
+		padding-bottom: 1rem;
+		margin-top: 8.5rem;
+		margin-bottom: 50rem;
+	}
+}
+
+.form__rowfile {
+	display: block;
+	margin-top: 9rem;
+}
+
+.input {
+	background-color: #1B1E1F;
+}
+
+.input__wrapper__1,
+.input__wrapper__2 {
+	position: relative;
+	text-align: center;
+}
+
+.input__wrapper__1 {
+	width: auto;
+}
+
+.input__wrapper__2 {
+	width: auto;
+	margin-left: 0rem;
+	margin-top: 5rem;
+}
+ 
+.input__file,
+.input__file__2 {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	background-color: #1B1E1F;
+}
+ 
+.input__file-icon-wrapper {
+	height: 2.2rem;
+	width: 2.2rem;
+	display: flex;
+	align-items: center;
+	margin-right: 5rem;
+}
+ 
+.input__file-button {
+	height: 6.3rem;
+	background-color: #1B1E1F;
+	color: #fff;
+	font-size: 3.6rem;
+	font-weight: 300;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+	padding-left: 0rem;
+	border: none;
+	border-radius: 0rem;
+	cursor: pointer;
+}
+
+.input__file-button--1 {
+	width: auto;
+}
+
+.input__file-button--2 {
+	width: auto;
+}
+
+.form__content {
+
+	display: flex;
+	align-items: center;
+	margin-top: 7rem;
+	&--name {
+		font-size: 3.2rem;
+		margin-right: 3rem;
+		padding-top: 0rem;
+	}
+	&--icon {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+}
+
+.form__confidantial {
+	display: none;
+}
+
+
+
+.sendwindow {
+	font-size: 5.4rem;
+	font-weight: 400;
+	color: #2F3734;
+	width: 70%;
+    height: 50rem;
+	border: 0.2rem solid rgba(81, 211, 164, 0.2);
+	position: fixed;
+	background-color: #fff;
+	display: none;
+	z-index: 152;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	padding-top: 18rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} // End Mobile Adaptive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="" content="">
+	<link rel="icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+
+	<title>maf</title>
+
+</head>
+
+<body>
+
+	<header class="header">
+
+    <div class="container">
+            
+            <div class="header__inner">
+
+                <a class="header__logo" href="index.html">
+                    <img src="img/header__logo.svg" alt="">
+                </a>
+
+                <div class="burger"></div>
+
+                <nav class="nav">
+
+                    <ul class="nav__list">
+
+                        <li class="nav__item">
+                            <a href="production.html">Продукция</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#">Наши проекты</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="aboutcompany.html">О компании</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <a class="header__logo--mob" href="index.html">
+                    <img src="img/header__logo--mob.svg" alt="">
+                </a>
+
+                <a class="header__phone" href="tel:88005502092">
+                  <span class="header__phone--icon">
+                    <img src="img/header--phone.svg" alt="">
+                  </span>
+                  <span class="header__phone--icon--mobile">
+                    <img src="img/header--phone--mob.svg" alt="">
+                  </span>
+                  <span class="header__phone--number">
+                    8 (800) 550-20-92
+                  </span>
+                </a>
+                
+            </div>
+
+            <div class="header__border__bottom"></div>
+
+        </div>
+
+  </header>
+
+	<main>
+
+		<section class="section--maincontacts">
+
+      <div class="maincontacts__circles">
+        <img src="img/circles--contacts.svg" alt="">
+      </div>
+    
+      <div class="container container--maincontacts">
+        
+        <div class="maincontacts--title">
+          Наши контакты
+        </div>
+
+        <div class="maincontacts__inner">
+
+          <div class="maincontacts--left"> 
+
+            <div class="map">
+              <div id="map"></div>
+              <script type="text/javascript">
+              ymaps.ready(init);
+              function init(){
+              var myMap = new ymaps.Map("map", {
+                  center: [55.76, 37.64],
+                  zoom: 18
+              });
+              }
+              </script>
+            </div>
+            
+          </div>
+
+          <div class="maincontacts--right">
+            <div class="maincontacts--right--title">
+              Производство
+            </div>
+            <div class="maincontacts--right--text">
+              г. Владимир, Владимирская обл., ФАД М-7, 201-й км
+            </div>
+            <div class="maincontacts--right--title">
+              Представительство
+            </div>
+            <div class="maincontacts--right--text">
+              г. Москва, ул. Обручева 52Е, 2 этаж
+            </div>
+            <div class="maincontacts--right--title">
+              Электронная почта
+            </div>
+            <div class="maincontacts--right--text">
+              info@vladpoliprom.ru
+            </div>
+            <div class="maincontacts--right--title">
+              Контактные телефоны
+            </div>
+            <div class="maincontacts--right--phones">
+              <a class="maincontacts--phone" href="tel:88005502092">
+                8 (800) 550-20-92
+              </a>
+              <a class="maincontacts--phone" href="tel:89254207019">
+                8 (925) 420-70-19
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section--form">
+      
+      <div class="container container--form">
+        
+        <div class="form__inner">
+
+            <form>
+            
+              <div class="form__title">
+                Форма обратной связи
+              </div>
+
+              <div class="form__item--long">
+                <div class="form__item--title">
+                  Ваше имя
+                </div>
+                <input class="form__item--input input__color" type="text" name="name" required>
+              </div>
+
+              <div class="form__row">
+                <div class="form__item--short">
+                  <div class="form__item--title">
+                    E-mail
+                  </div>
+                  <input class="form__item--input input__color" type="email" name="email" required>
+                </div>
+                <div class="form__item--short">
+                  <div class="form__item--title">
+                    Телефон
+                  </div>
+                  <input class="form__item--input input__color" type="tel" name="tel" required>
+                </div>
+              </div>  
+
+              <div class="form__row">
+                <div class="form__item--short">
+                  <div class="form__item--title">
+                    Название компании
+                  </div>
+                  <input class="form__item--input input__color" type="text" name="company" required>
+                </div>
+                <div class="form__item--short">
+                  <div class="form__item--title">
+                    Должность сотрудника
+                  </div>
+                  <input class="form__item--input input__color" type="text" name="colleague" required>
+                </div>
+              </div>  
+
+              <div class="form__item--long">
+                <div class="form__item--title">
+                  Сообщение пользователя
+                </div>
+                <input class="form__item--input input__color" type="text" name="message" required>
+              </div>
+
+              <div class="form__rowfile">
+                        <div class="input__wrapper input__wrapper__1">
+                            <input name="file" type="file" name="file" id="input__file" class="input input__file input__color" multiple required>
+                            <label for="input__file" class="input__file-button input__file-button--1 input__color">
+                              <span class="input__file-icon-wrapper">
+                                  <img class="input__file-icon" src="img/form--icon.svg">
+                              </span>
+                              <span class="input__file-button-text">    Прикрепить реквизиты
+                              </span>
+                            </label>
+                        </div>
+
+                        <div class="input__wrapper input__wrapper__2">
+                            <input name="file" type="file" name="file" id="input__file__2" class="input input__file__2 input__color" multiple>
+                            <label for="input__file__2" class="input__file-button input__file-button--2 input__color">
+                                <span class="input__file-icon-wrapper">
+                                    <img class="input__file-icon" src="img/form--icon.svg">
+                                </span>
+                                <span class="input__file-button-text__2">    Прикрепить тех. задание
+                                </span>
+                            </label>
+                        </div>
+              </div>
+
+              <!-- <div class="form__content">
+                <span class="form__content--name">
+                  Файл.docx
+                </span>
+                <span class="form__content--icon">
+                  <img src="img/form--cross.svg" alt="">
+                </span>
+              </div> -->
+
+              <button class="form__button input__color form__button--page" type="submit">
+                Отправить
+              </button> 
+
+              <div class="form__confidantial">
+                <p>
+                  Отпаравляя форму, вы соглашаетесь с
+                </p>
+                <a class="form__confidantial--link" href="#">
+                  политикой конфиденциальности
+                </a>
+              </div>
+
+            </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+	</main>
+
+	<footer class="footer">
+		
+		<div class="container">
+            
+            <div class="footer__inner">
+
+                <a class="footer__logo" href="index.html">
+                    <img src="img/header__logo.svg" alt="">
+                </a>
+
+                <nav class="nav__footer">
+
+                    <ul class="nav__footer__list">
+
+                        <li class="nav__footer__item">
+                            <a href="#">Продукция</a>
+                        </li>
+
+                        <li class="nav__footer__item">
+                            <a href="#">Наши проекты</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="aboutcompany.html">О компании</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <!-- <a class="footer__logo--mob" href="index.html">
+                    <img src="img/footer__logo--mob.png" alt="">
+                </a> -->
+
+                <a class="footer__phone" href="tel:88005502092">
+                	<span class="footer__phone--icon">
+                		<img src="img/header--phone.svg" alt="">
+                	</span>
+                	<span class="footer__phone--number">
+                		8 (800) 550-20-92
+                	</span>
+                </a>
+                
+            </div>
+
+            <div class="footer__bottom">
+            	<a class="footer__request" href="https://requestdesign.ru">
+            		<img src="img/footer--request.svg" alt="">
+            	</a>
+            </div>
+
+        </div>
+
+
+
+        <div class="modal">
+
+        	<div class="form__inner">
+
+        		<form>
+        		
+        			<div class="form__title">
+        				Форма обратной связи
+        			</div>
+
+        			<div class="form__item--long">
+        				<div class="form__item--title">
+        					Ваше имя
+        				</div>
+        				<input class="form__item--input" type="text" name="name" required>
+        			</div>
+
+        			<div class="form__row">
+        				<div class="form__item--short">
+        					<div class="form__item--title">
+        						E-mail
+        					</div>
+        					<input class="form__item--input" type="email" name="email" required>
+        				</div>
+        				<div class="form__item--short">
+        					<div class="form__item--title">
+        						Телефон
+        					</div>
+        					<input class="form__item--input" type="tel" name="tel" required>
+        				</div>
+    				</div>	
+
+    				<div class="form__row">
+        				<div class="form__item--short">
+        					<div class="form__item--title">
+        						Название компании
+        					</div>
+        					<input class="form__item--input" type="text" name="company" required>
+        				</div>
+        				<div class="form__item--short">
+        					<div class="form__item--title">
+        						Должность сотрудника
+        					</div>
+        					<input class="form__item--input" type="text" name="colleague" required>
+        				</div>
+    				</div>	
+
+    				<div class="form__rowfile">
+    					<div class="input__wrapper input__wrapper__1">
+                            <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple required>
+                            <label for="input__file" class="input__file-button input__file-button--1">
+                            	<span class="input__file-icon-wrapper">
+                                	<img class="input__file-icon" src="img/form--icon.svg">
+                            	</span>
+                            	<span class="input__file-button-text">    Прикрепить реквизиты
+                            	</span>
+                            </label>
+                        </div>
+
+                        <div class="input__wrapper input__wrapper__2">
+                            <input name="file" type="file" name="file" id="input__file__2" class="input input__file__2" multiple>
+                            <label for="input__file__2" class="input__file-button input__file-button--2">
+                                <span class="input__file-icon-wrapper">
+                                    <img class="input__file-icon" src="img/form--icon.svg">
+                                </span>
+                                <span class="input__file-button-text__2">    Прикрепить тех. задание
+                                </span>
+                            </label>
+                        </div>
+    				</div>
+
+    				<!-- <div class="form__content">
+    					<span class="form__content--name">
+    						Файл.docx
+    					</span>
+    					<span class="form__content--icon">
+    						<img src="img/form--cross.svg" alt="">
+    					</span>
+    				</div> -->
+
+    				<button class="form__button" type="submit">
+    					Отправить
+    				</button> 
+
+    			</form>
+
+        	</div>
+            	
+            <div class="close-modal">
+            	<img src="img/cross-modal.svg" alt="">
+            </div>
+
+        </div>
+
+        <div class="overlay"></div>
+                    
+        <div class="sendwindow">          
+                Заявка успешно отправлена   
+        </div>    
+
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>

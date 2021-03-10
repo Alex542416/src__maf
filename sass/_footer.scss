@@ -1,0 +1,269 @@
+
+
+.footer {
+	background-color: #1B1E1F;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 14.3rem;
+		background-color: #1B1E1F;
+		border-bottom: 0.15rem solid #353535;
+	}
+	&__logo {
+		display: block;
+		cursor: pointer;
+		width: 31.8rem;
+		height: 8.9rem;
+		& img {
+			width: 100%;
+		}
+	}
+	&__phone {
+		display: flex;
+		align-items: center;
+		&--icon {
+			width: 2.5rem;
+			height: 2.5rem;
+			margin-right: 1.5rem;
+			& img {
+				width: 100%;
+			}
+		}
+		&--number {
+			font-size: 2.4rem;
+			font-weight: 500;
+			font-family: 'Futura PT';
+			color: #fff;
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 12rem;
+	}
+	&__confidential {
+		display: block;
+		cursor: pointer;
+		font-size: 2rem;
+		font-weight: 300;
+		font-family: 'Futura PT';
+		color: #fff;
+	}
+	&__rights {
+		font-size: 2rem;
+		font-weight: 300;
+		font-family: 'Futura PT';
+		color: #9E9E9E;
+		text-transform: uppercase;
+	}
+	&__request {
+		display: block;
+		cursor: pointer;
+		width: 28.7rem;
+		height: 3.7rem;
+		transition: transform .2s linear;
+		& img {
+			width: 100%;
+			height: 100%;
+		}
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+	
+}
+
+	
+
+.nav__footer__list {
+	display: flex;
+	align-items: center;
+}
+
+.nav__footer__item {
+	position: relative;
+	margin-right: 4.2rem;
+	&:last-child {
+		margin-right: 0rem;
+	}
+}
+    
+.nav__footer__item > a {
+	font-size: 2.2rem;
+	font-weight: 300;
+	font-family: 'Futura PT';
+	color: #fff;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ******************************************************************
+// ******************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+// Mobile Adaptive
+
+@media(max-width: 48em) {
+
+// Footer
+
+.footer {
+	background-color: #1B1E1F;
+	&__inner {
+		display: block;
+		height: auto;
+		border-top: none;
+		border-bottom: 0.2rem solid #353535;
+	}
+	&__logo {
+		display: block;
+		width: 63.6rem;
+		height: 17.8rem;
+		padding-top: 0rem;
+		& img {
+			width: 100%;
+		}
+	}
+	&__phone {
+		display: flex;
+		align-items: center;
+		height: 20rem;
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+		&--icon {
+			width: 4rem;
+			height: 4rem;
+			margin-right: 5rem;
+			& img {
+				width: 100%;
+			}
+		}
+		&--number {
+			font-size: 4rem;
+		}
+	}
+
+	&__bottom {
+		display: block;
+		justify-content: start;
+		align-items: center;
+		height: 54rem;
+	}
+	&__confidential {
+		font-size: 4rem;
+		margin-top: 9.4rem;
+	}
+	&__rights {
+		font-size: 4rem;
+		margin-top: 9.4rem;
+	}
+	&__request {
+		display: block;
+		cursor: pointer;
+		width: 57.4rem;
+		height: 7.4rem;
+		transition: none;
+		margin-top: 9.4rem;
+		&:hover {
+			transform: none;
+		}
+	}
+	
+}
+
+	
+
+.nav__footer__list {
+	display: block;
+	padding-top: 7rem;
+	padding-bottom: 7.6rem;
+	border-top: 0.2rem solid #353535;
+	border-bottom: 0.2rem solid #353535;
+	margin-top: 16rem;
+}
+
+.nav__footer__item {
+	position: relative;
+	margin-right: 0rem;
+	margin-bottom: 6rem;
+	&:last-child {
+		margin-right: 0rem;
+		margin-bottom: 0rem;
+	}
+}
+    
+.nav__footer__item > a {
+	font-size: 4rem;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} // End Adaptive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
